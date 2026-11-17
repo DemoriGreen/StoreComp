@@ -10,4 +10,3 @@ A responsive tech-gadget storefront built with React and Vite.
 
 The homepage renders three product cards from a product data array in `App.jsx`.
 
-**CSS attribution:** Styling was developed with assistance from ChatGPT (OpenAI), as permitted by the assignment instructions.
