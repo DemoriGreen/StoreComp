@@ -1,0 +1,39 @@
+/* CSS styling created with AI assistance (ChatGPT). */
+.app-shell { min-height: 100vh; overflow: hidden; background: #091522; }
+.products-section { width: min(1160px, calc(100% - 48px)); margin: 0 auto 76px; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 25px; }
+.section-kicker { color: #a7f36b; font-size: .66rem; font-weight: 800; letter-spacing: .16em; }
+.section-heading h2 { margin: 9px 0 0; color: #f4f7fb; font-size: clamp(2rem, 4vw, 2.8rem); letter-spacing: -.06em; }
+.section-heading h2 span { color: #a7f36b; }
+.section-heading > p { max-width: 250px; margin: 0 0 5px; color: #8799ac; font-size: .84rem; line-height: 1.6; }
+.product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.closing-strip {
+  width: min(1160px, calc(100% - 48px));
+  margin: 0 auto 75px;
+  padding: 22px 25px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid #2b4050;
+  border-radius: 14px;
+  background: #102131;
+}
+.closing-icon { color: #a7f36b; font-size: 1.7rem; }
+.closing-strip p { flex: 1; margin: 0; color: #aab8c8; font-size: .9rem; }
+.closing-strip strong { color: #f5f7fb; }
+.closing-strip a { color: #a7f36b; text-decoration: none; font-size: .78rem; font-weight: 800; white-space: nowrap; }
+@media (max-width: 800px) {
+  .products-section, .closing-strip { width: min(100% - 32px, 1160px); }
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .product-card:last-child { grid-column: 1 / -1; }
+  .product-card:last-child .product-image-wrap { height: 250px; }
+}
+@media (max-width: 560px) {
+  .section-heading { align-items: flex-start; flex-direction: column; gap: 9px; }
+  .product-grid { grid-template-columns: 1fr; }
+  .product-card:last-child { grid-column: auto; }
+  .product-card:last-child .product-image-wrap { height: 225px; }
+  .closing-strip { align-items: flex-start; flex-wrap: wrap; }
+  .closing-strip p { flex-basis: calc(100% - 45px); }
+  .closing-strip a { margin-left: 45px; }
+}

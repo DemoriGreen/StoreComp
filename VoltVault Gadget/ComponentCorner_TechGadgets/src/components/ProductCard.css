@@ -1,0 +1,33 @@
+/* CSS styling created with AI assistance (ChatGPT). */
+.product-card {
+  overflow: hidden;
+  border: 1px solid #26394c;
+  border-radius: 18px;
+  background: #101f2e;
+  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+.product-card:hover { transform: translateY(-6px); border-color: #668d5a; box-shadow: 0 18px 40px #0003; }
+.product-image-wrap { position: relative; height: 225px; overflow: hidden; background: #1b2c3c; }
+.product-image { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.product-card:hover .product-image { transform: scale(1.05); }
+.product-badge {
+  position: absolute;
+  z-index: 1;
+  top: 14px;
+  left: 14px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  color: #0b1726;
+  background: #a7f36b;
+  font-size: .6rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+.product-image-number { position: absolute; right: 13px; bottom: 12px; color: #ffffffb8; font-size: .65rem; letter-spacing: .12em; text-shadow: 0 1px 5px #000; }
+.product-info { padding: 20px 20px 19px; }
+.product-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.product-heading h3 { margin: 0; color: #f4f7fb; font-size: 1.06rem; letter-spacing: -.025em; }
+.product-price { color: #a7f36b; font-size: .95rem; font-weight: 800; white-space: nowrap; }
+.product-info p { min-height: 48px; margin: 12px 0 18px; color: #91a2b4; font-size: .83rem; line-height: 1.55; }
+.product-link { display: flex; justify-content: space-between; align-items: center; padding-top: 13px; border-top: 1px solid #293b4d; color: #dce5ed; text-decoration: none; font-size: .78rem; font-weight: 700; }
+.product-link span { color: #a7f36b; font-size: 1rem; }

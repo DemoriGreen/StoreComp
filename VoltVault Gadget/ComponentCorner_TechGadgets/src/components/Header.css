@@ -1,0 +1,55 @@
+/* CSS styling created with AI assistance (ChatGPT). */
+.site-header {
+  width: min(1160px, calc(100% - 48px));
+  margin: 0 auto;
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  color: #f5f7fb;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  color: #f5f7fb;
+  text-decoration: none;
+  font-size: 1.22rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 11px;
+  color: #07111f;
+  background: #a7f36b;
+  font-size: 1rem;
+  font-weight: 900;
+}
+.brand-period { color: #a7f36b; }
+.main-nav { display: flex; align-items: center; gap: 30px; }
+.main-nav a, .header-shop-link {
+  color: #b6c1d1;
+  text-decoration: none;
+  font-size: .88rem;
+  font-weight: 600;
+  transition: color .2s ease;
+}
+.main-nav a:hover, .header-shop-link:hover { color: #a7f36b; }
+.header-shop-link {
+  color: #a7f36b;
+  border: 1px solid #344456;
+  border-radius: 999px;
+  padding: 11px 17px;
+}
+.header-shop-link span { margin-left: 8px; }
+@media (max-width: 680px) {
+  .site-header { width: min(100% - 32px, 1160px); min-height: 72px; flex-wrap: wrap; padding: 14px 0; }
+  .main-nav { order: 3; width: 100%; justify-content: space-between; gap: 12px; }
+  .main-nav a { font-size: .82rem; }
+  .header-shop-link { padding: 9px 12px; font-size: .8rem; }
+}
